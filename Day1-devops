@@ -1,0 +1,353 @@
+Microsoft Windows [Version 10.0.19044.2486]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\WINDOWS\system32>choco --version
+1.2.1
+
+C:\WINDOWS\system32>choco -v
+1.2.1
+
+C:\WINDOWS\system32>choco --v
+Chocolatey v1.2.1
+
+C:\WINDOWS\system32>choco install -y wget nano notepad2
+Chocolatey v1.2.1
+Installing the following packages:
+wget;nano;notepad2
+By installing, you accept licenses for the packages.
+Progress: Downloading Wget 1.21.3... 100%
+
+Wget v1.21.3 [Approved]
+wget package files install completed. Performing other installation steps.
+Getting x64 bit zip
+Extracting C:\ProgramData\chocolatey\lib\Wget\tools\wget-1.21.3-win64_x64.zip to C:\ProgramData\chocolatey\lib\Wget\tools...
+C:\ProgramData\chocolatey\lib\Wget\tools
+ ShimGen has successfully created a shim for wget.exe
+ The install of wget was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\Wget\tools'
+nano v7.1.13 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+notepad2 v4.2.25.20160422 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+
+Chocolatey installed 1/3 packages.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Warnings:
+ - notepad2 - notepad2 v4.2.25.20160422 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+ - nano - nano v7.1.13 already installed.
+ Use --force to reinstall, specify a version to install, or try upgrade.
+
+Enjoy using Chocolatey? Explore more amazing features to take your
+experience to the next level at
+ https://chocolatey.org/compare
+
+C:\WINDOWS\system32>choco install -y consolez cmder conemu
+Chocolatey v1.2.1
+Installing the following packages:
+consolez;cmder;conemu
+By installing, you accept licenses for the packages.
+Progress: Downloading ConsoleZ 1.19.0.19104... 100%
+
+ConsoleZ v1.19.0.19104 [Approved]
+consolez package files install completed. Performing other installation steps.
+Downloading ConsoleZ 64 bit
+  from 'https://github.com/cbucher/console/releases/download/1.19.0/ConsoleZ.x64.1.19.0.19104.zip'
+Progress: 100% - Completed download of C:\Users\User\AppData\Local\Temp\chocolatey\ConsoleZ\1.19.0.19104\ConsoleZ.x64.1.19.0.19104.zip (2.72 MB).
+Download of ConsoleZ.x64.1.19.0.19104.zip (2.72 MB) completed.
+Hashes match.
+Extracting C:\Users\User\AppData\Local\Temp\chocolatey\ConsoleZ\1.19.0.19104\ConsoleZ.x64.1.19.0.19104.zip to C:\ProgramData\chocolatey\lib\ConsoleZ\tools...
+C:\ProgramData\chocolatey\lib\ConsoleZ\tools
+ ShimGen has successfully created a gui shim for Console.exe
+ The install of consolez was successful.
+  Software installed to 'C:\ProgramData\chocolatey\lib\ConsoleZ\tools'
+Progress: Downloading vcredist2010 10.0.40219.32503... 100%
+Progress: Downloading Cmder 1.3.20... 22%                                                                                                                             cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+cmder package files install failed with exit code 1. Performing other installation steps.
+The install of cmder was NOT successful.
+cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+Progress: Downloading ConEmu 22.12.18.0... 100%
+
+ConEmu v22.12.18.0 [Approved]
+conemu package files install completed. Performing other installation steps.
+Downloading ConEmu 64 bit
+  from 'https://github.com/Maximus5/ConEmu/releases/download/v22.12.18/ConEmuSetup.221218.exe'
+Progress: 100% - Completed download of C:\Users\User\AppData\Local\Temp\chocolatey\ConEmu\22.12.18.0\ConEmuSetup.221218.exe (7.6 MB).
+Download of ConEmuSetup.221218.exe (7.6 MB) completed.
+Hashes match.
+Installing ConEmu...
+ConEmu has been installed.
+  conemu may be able to be automatically uninstalled.
+ The install of conemu was successful.
+  Software installed as 'exe', install location is likely default.
+
+Chocolatey installed 2/3 packages. 1 packages failed.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Failures
+ - cmder (exited 1) - cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+
+C:\WINDOWS\system32>choco install -y cmder --force
+Chocolatey v1.2.1
+Installing the following packages:
+cmder
+By installing, you accept licenses for the packages.
+Progress: Downloading Cmder 1.3.20... 10%                                                                                                                             cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+cmder package files install failed with exit code 1. Performing other installation steps.
+The install of cmder was NOT successful.
+cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+
+Chocolatey installed 0/1 packages. 1 packages failed.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Failures
+ - cmder (exited 1) - cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+
+C:\WINDOWS\system32>choco install -y cmder --debug
+Chocolatey v1.2.1
+Chocolatey is running on Windows v 10.0.19044.0
+Command line: "C:\ProgramData\chocolatey\choco.exe" install -y cmder --debug
+Received arguments: install -y cmder --debug
+Performing validation checks.
+Global Configuration Validation Checks:
+ - Package Exit Code / Exit On Reboot = Checked
+System State Validation Checks:
+ Reboot Requirement Checks:
+ - Pending Computer Rename = Checked
+ - Pending Component Based Servicing = Checked
+ - Pending Windows Auto Update = Checked
+ - Pending File Rename Operations = Ignored
+ - Pending Windows Package Installer = Checked
+ - Pending Windows Package Installer SysWow64 = Checked
+The source 'https://community.chocolatey.org/api/v2/' evaluated to a 'normal' source type
+
+NOTE: Hiding sensitive configuration data! Please double and triple
+ check to be sure no sensitive data is shown, especially if copying
+ output to a gist for review.
+Configuration: CommandName='install'|
+CacheLocation='C:\Users\User\AppData\Local\Temp\chocolatey'|
+ContainsLegacyPackageInstalls='True'|
+CommandExecutionTimeoutSeconds='2700'|WebRequestTimeoutSeconds='30'|
+Sources='https://community.chocolatey.org/api/v2/'|SourceType='normal'|
+Debug='True'|Verbose='False'|Trace='False'|Force='False'|Noop='False'|
+HelpRequested='False'|UnsuccessfulParsing='False'|RegularOutput='True'|
+QuietOutput='False'|PromptForConfirmation='False'|
+DisableCompatibilityChecks='False'|AcceptLicense='True'|
+AllowUnofficialBuild='False'|Input='cmder'|AllVersions='False'|
+SkipPackageInstallProvider='False'|SkipHookScripts='False'|
+PackageNames='cmder'|Prerelease='False'|ForceX86='False'|
+OverrideArguments='False'|NotSilent='False'|
+ApplyPackageParametersToDependencies='False'|
+ApplyInstallArgumentsToDependencies='False'|IgnoreDependencies='False'|
+AllowMultipleVersions='False'|AllowDowngrade='False'|
+ForceDependencies='False'|PinPackage='False'|
+Information.PlatformType='Windows'|
+Information.PlatformVersion='10.0.19044.0'|
+Information.PlatformName='Windows 10'|
+Information.ChocolateyVersion='1.2.1.0'|
+Information.ChocolateyProductVersion='1.2.1'|
+Information.FullName='choco, Version=1.2.1.0, Culture=neutral, PublicKeyToken=79d02ea9cad655eb'|
+
+Information.Is64BitOperatingSystem='True'|
+Information.Is64BitProcess='True'|Information.IsInteractive='True'|
+Information.UserName='User'|
+Information.UserDomainName='DESKTOP-OBEFG6F'|
+Information.IsUserAdministrator='True'|
+Information.IsUserSystemAccount='False'|
+Information.IsUserRemoteDesktop='False'|
+Information.IsUserRemote='True'|
+Information.IsProcessElevated='True'|
+Information.IsLicensedVersion='False'|Information.LicenseType='Foss'|
+Information.CurrentDirectory='C:\WINDOWS\system32'|
+Features.AutoUninstaller='True'|Features.ChecksumFiles='True'|
+Features.AllowEmptyChecksums='False'|
+Features.AllowEmptyChecksumsSecure='True'|
+Features.FailOnAutoUninstaller='False'|
+Features.FailOnStandardError='False'|Features.UsePowerShellHost='True'|
+Features.LogEnvironmentValues='False'|Features.LogWithoutColor='False'|
+Features.VirusCheck='False'|
+Features.FailOnInvalidOrMissingLicense='False'|
+Features.IgnoreInvalidOptionsSwitches='True'|
+Features.UsePackageExitCodes='True'|
+Features.UseEnhancedExitCodes='False'|
+Features.UseFipsCompliantChecksums='False'|
+Features.ShowNonElevatedWarnings='True'|
+Features.ShowDownloadProgress='True'|
+Features.StopOnFirstPackageFailure='False'|
+Features.UseRememberedArgumentsForUpgrades='False'|
+Features.IgnoreUnfoundPackagesOnUpgradeOutdated='False'|
+Features.SkipPackageUpgradesWhenNotInstalled='False'|
+Features.RemovePackageInformationOnUninstall='False'|
+Features.ExitOnRebootDetected='False'|
+Features.LogValidationResultsOnWarnings='True'|
+Features.UsePackageRepositoryOptimizations='True'|
+ListCommand.LocalOnly='False'|ListCommand.IdOnly='False'|
+ListCommand.IncludeRegistryPrograms='False'|ListCommand.PageSize='25'|
+ListCommand.Exact='False'|ListCommand.ByIdOnly='False'|
+ListCommand.ByTagOnly='False'|ListCommand.IdStartsWith='False'|
+ListCommand.OrderByPopularity='False'|ListCommand.ApprovedOnly='False'|
+ListCommand.DownloadCacheAvailable='False'|
+ListCommand.NotBroken='False'|
+ListCommand.IncludeVersionOverrides='False'|
+UpgradeCommand.FailOnUnfound='False'|
+UpgradeCommand.FailOnNotInstalled='False'|
+UpgradeCommand.NotifyOnlyAvailableUpgrades='False'|
+UpgradeCommand.ExcludePrerelease='False'|
+NewCommand.AutomaticPackage='False'|
+NewCommand.UseOriginalTemplate='False'|SourceCommand.Command='unknown'|
+SourceCommand.Priority='0'|SourceCommand.BypassProxy='False'|
+SourceCommand.AllowSelfService='False'|
+SourceCommand.VisibleToAdminsOnly='False'|
+FeatureCommand.Command='unknown'|ConfigCommand.Command='unknown'|
+ApiKeyCommand.Remove='False'|PinCommand.Command='unknown'|
+OutdatedCommand.IgnorePinned='False'|
+ExportCommand.IncludeVersionNumbers='False'|Proxy.BypassOnLocal='True'|
+TemplateCommand.Command='unknown'|
+_ Chocolatey:ChocolateyInstallCommand - Normal Run Mode _
+Installing the following packages:
+cmder
+By installing, you accept licenses for the packages.
+Using 'https://community.chocolatey.org/api/v2/'.
+- Supports prereleases? 'True'.
+- Is ServiceBased? 'True'.
+Package 'cmder' found on source 'https://community.chocolatey.org/api/v2/'
+Progress: Downloading Cmder 1.3.20... 10%                                                                                                                             cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+cmder package files install failed with exit code 1. Performing other installation steps.
+No package information as package is null.
+No package information to save as package is null.
+The install of cmder was NOT successful.
+cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+
+Chocolatey installed 0/1 packages. 1 packages failed.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Failures
+ - cmder (exited 1) - cmder not installed. An error occurred during installation:
+ The decryption operation failed, see inner exception.
+Exiting with 1
+
+C:\WINDOWS\system32>choco install -y virtualbox
+Chocolatey v1.2.1
+Installing the following packages:
+virtualbox
+By installing, you accept licenses for the packages.
+Progress: Downloading chocolatey-core.extension 1.4.0... 100%
+Progress: Downloading chocolatey-compatibility.extension 1.0.0... 100%
+Progress: Downloading virtualbox 7.0.6... 100%
+Progress: Downloading vcredist140 14.34.31931... 100%
+Progress: Downloading KB3033929 1.0.5... 100%
+Progress: Downloading chocolatey-windowsupdate.extension 1.0.5... 100%
+Progress: Downloading KB3035131 1.0.3... 100%
+Progress: Downloading KB2919355 1.0.20160915... 100%
+Progress: Downloading KB2919442 1.0.20160915... 100%
+Progress: Downloading KB2999226 1.0.20181019... 100%
+
+chocolatey-compatibility.extension v1.0.0 [Approved]
+chocolatey-compatibility.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-compatibility extensions.
+ The install of chocolatey-compatibility.extension was successful.
+  Software installed to 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility'
+
+chocolatey-core.extension v1.4.0 [Approved]
+chocolatey-core.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-core extensions.
+ The install of chocolatey-core.extension was successful.
+  Software installed to 'C:\ProgramData\chocolatey\extensions\chocolatey-core'
+
+chocolatey-windowsupdate.extension v1.0.5 [Approved]
+chocolatey-windowsupdate.extension package files install completed. Performing other installation steps.
+ Installed/updated chocolatey-windowsupdate extensions.
+ The install of chocolatey-windowsupdate.extension was successful.
+  Software installed to 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate'
+
+KB3035131 v1.0.3 [Approved]
+kb3035131 package files install completed. Performing other installation steps.
+Skipping installation because update KB3035131 does not apply to this operating system (Microsoft Windows 10 Home).
+ The install of kb3035131 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB3033929 v1.0.5 [Approved]
+kb3033929 package files install completed. Performing other installation steps.
+Skipping installation because update KB3033929 does not apply to this operating system (Microsoft Windows 10 Home).
+ The install of kb3033929 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB2919442 v1.0.20160915 [Approved]
+kb2919442 package files install completed. Performing other installation steps.
+Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.
+ The install of kb2919442 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB2919355 v1.0.20160915 [Approved]
+kb2919355 package files install completed. Performing other installation steps.
+Skipping installation because this hotfix only applies to Windows 8.1 and Windows Server 2012 R2.
+ The install of kb2919355 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+KB2999226 v1.0.20181019 [Approved] - Possibly broken
+kb2999226 package files install completed. Performing other installation steps.
+Skipping installation because update KB2999226 does not apply to this operating system (Microsoft Windows 10 Home).
+ The install of kb2999226 was successful.
+  Software install location not explicitly set, it could be in package or
+  default install location of installer.
+
+vcredist140 v14.34.31931 [Approved]
+vcredist140 package files install completed. Performing other installation steps.
+Downloading vcredist140-x86
+  from 'https://download.visualstudio.microsoft.com/download/pr/6a4c74cd-8ee0-4757-9620-a11a5b48b1a7/CE4843A946EE3732EB2BFC098DB5741DC5495C7BEA204E11D379336DCC68E875/VC_redist.x86.exe'
+Progress: 71% - Saving 9.41 MB of 13.19 MB                                                                                                                            ERROR: The remote file either doesn't exist, is unauthorized, or is forbidden for url 'https://download.visualstudio.microsoft.com/download/pr/6a4c74cd-8ee0-4757-9620-a11a5b48b1a7/CE4843A946EE3732EB2BFC098DB5741DC5495C7BEA204E11D379336DCC68E875/VC_redist.x86.exe'. Exception calling "Read" with "3" argument(s): "The decryption operation failed, see inner exception."
+The install of vcredist140 was NOT successful.
+Error while running 'C:\ProgramData\chocolatey\lib\vcredist140\tools\chocolateyInstall.ps1'.
+ See log for details.
+
+virtualbox v7.0.6 [Approved]
+virtualbox package files install completed. Performing other installation steps.
+#< CLIXML
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04"><Obj S="progress" RefId="0"><TN RefId="0"><T>System.Management.Automation.PSCustomObject</T><T>System.Object</T></TN><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Preparing modules for first use.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><Obj S="progress" RefId="1"><TNRef RefId="0" /><MS><I64 N="SourceId">1</I64><PR N="Record"><AV>Preparing modules for first use.</AV><AI>0</AI><Nil /><PI>-1</PI><PC>-1</PC><T>Completed</T><SR>-1</SR><SD> </SD></PR></MS></Obj><S S="debug">Host version is 5.1.19041.2364, PowerShell Version is '5.1.19041.2364' and CLR Version is '4.0.30319.42000'.</S><S S="verbose">Exporting function 'Format-FileSize'.</S><S S="verbose">Exporting function 'Get-ChecksumValid'.</S><S S="verbose">Exporting function 'Get-ChocolateyPath'.</S><S S="verbose">Exporting function 'Get-ChocolateyUnzip'.</S><S S="verbose">Exporting function 'Get-ChocolateyWebFile'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariableNames'.</S><S S="verbose">Exporting function 'Get-FtpFile'.</S><S S="verbose">Exporting function 'Get-OSArchitectureWidth'.</S><S S="verbose">Exporting function 'Get-PackageParameters'.</S><S S="verbose">Exporting function 'Get-PackageParametersBuiltIn'.</S><S S="verbose">Exporting function 'Get-ToolsLocation'.</S><S S="verbose">Exporting function 'Get-UACEnabled'.</S><S S="verbose">Exporting function 'Get-UninstallRegistryKey'.</S><S S="verbose">Exporting function 'Get-VirusCheckValid'.</S><S S="verbose">Exporting function 'Get-WebFile'.</S><S S="verbose">Exporting function 'Get-WebFileName'.</S><S S="verbose">Exporting function 'Get-WebHeaders'.</S><S S="verbose">Exporting function 'Install-BinFile'.</S><S S="verbose">Exporting function 'Install-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Install-ChocolateyExplorerMenuItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyFileAssociation'.</S><S S="verbose">Exporting function 'Install-ChocolateyInstallPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPath'.</S><S S="verbose">Exporting function 'Install-ChocolateyPinnedTaskBarItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyPowershellCommand'.</S><S S="verbose">Exporting function 'Install-ChocolateyShortcut'.</S><S S="verbose">Exporting function 'Install-ChocolateyVsixPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Install-Vsix'.</S><S S="verbose">Exporting function 'Set-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Set-PowerShellExitCode'.</S><S S="verbose">Exporting function 'Start-ChocolateyProcessAsAdmin'.</S><S S="verbose">Exporting function 'Test-ProcessAdminRights'.</S><S S="verbose">Exporting function 'Uninstall-BinFile'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Update-SessionEnvironment'.</S><S S="verbose">Exporting function 'Write-FunctionCallLogMessage'.</S><S S="verbose">Exporting alias 'Get-ProcessorBits'.</S><S S="verbose">Exporting alias 'Get-OSBitness'.</S><S S="verbose">Exporting alias 'Get-InstallRegistryKey'.</S><S S="verbose">Exporting alias 'Generate-BinFile'.</S><S S="verbose">Exporting alias 'Add-BinFile'.</S><S S="verbose">Exporting alias 'Start-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Invoke-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Remove-BinFile'.</S><S S="verbose">Exporting alias 'refreshenv'.</S><S S="debug">Loading community extensions</S><S S="debug">Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility\chocolatey-compatibility.psm1'</S><S S="verbose">Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-compatibility\chocolatey-compatibility.psm1'.</S><S S="debug">Function 'Get-PackageParameters' exists, ignoring export.</S><S S="debug">Function 'Get-UninstallRegistryKey' exists, ignoring export.</S><S S="debug">Exporting function 'Install-ChocolateyDesktopLink' for backwards compatibility</S><S S="verbose">Exporting function 'Install-ChocolateyDesktopLink'.</S><S S="debug">Exporting function 'Write-ChocolateyFailure' for backwards compatibility</S><S S="verbose">Exporting function 'Write-ChocolateyFailure'.</S><S S="debug">Exporting function 'Write-ChocolateySuccess' for backwards compatibility</S><S S="verbose">Exporting function 'Write-ChocolateySuccess'.</S><S S="debug">Exporting function 'Write-FileUpdateLog' for backwards compatibility</S><S S="verbose">Exporting function 'Write-FileUpdateLog'.</S><S S="verbose">Importing function 'Install-ChocolateyDesktopLink'.</S><S S="verbose">Importing function 'Write-ChocolateyFailure'.</S><S S="verbose">Importing function 'Write-ChocolateySuccess'.</S><S S="verbose">Importing function 'Write-FileUpdateLog'.</S><S S="debug">Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-core\chocolatey-core.psm1'</S><S S="verbose">Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-core\chocolatey-core.psm1'.</S><S S="verbose">Exporting function 'Get-AppInstallLocation'.</S><S S="verbose">Exporting function 'Get-AvailableDriveLetter'.</S><S S="verbose">Exporting function 'Get-EffectiveProxy'.</S><S S="verbose">Exporting function 'Get-PackageCacheLocation'.</S><S S="verbose">Exporting function 'Get-WebContent'.</S><S S="verbose">Exporting function 'Register-Application'.</S><S S="verbose">Exporting function 'Remove-Process'.</S><S S="verbose">Importing function 'Get-AppInstallLocation'.</S><S S="verbose">Importing function 'Get-AvailableDriveLetter'.</S><S S="verbose">Importing function 'Get-EffectiveProxy'.</S><S S="verbose">Importing function 'Get-PackageCacheLocation'.</S><S S="verbose">Importing function 'Get-WebContent'.</S><S S="verbose">Importing function 'Register-Application'.</S><S S="verbose">Importing function 'Remove-Process'.</S><S S="debug">Importing 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate\chocolatey-windowsupdate.psm1'</S><S S="verbose">Loading module from path 'C:\ProgramData\chocolatey\extensions\chocolatey-windowsupdate\chocolatey-windowsupdate.psm1'.</S><S S="verbose">Exporting function 'Install-WindowsUpdate'.</S><S S="verbose">Exporting function 'Test-WindowsUpdate'.</S><S S="verbose">Importing function 'Install-WindowsUpdate'.</S><S S="verbose">Importing function 'Test-WindowsUpdate'.</S><S S="verbose">Exporting function 'Format-FileSize'.</S><S S="verbose">Exporting function 'Get-ChecksumValid'.</S><S S="verbose">Exporting function 'Get-ChocolateyPath'.</S><S S="verbose">Exporting function 'Get-ChocolateyUnzip'.</S><S S="verbose">Exporting function 'Get-ChocolateyWebFile'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Get-EnvironmentVariableNames'.</S><S S="verbose">Exporting function 'Get-FtpFile'.</S><S S="verbose">Exporting function 'Get-OSArchitectureWidth'.</S><S S="verbose">Exporting function 'Get-PackageParameters'.</S><S S="verbose">Exporting function 'Get-PackageParametersBuiltIn'.</S><S S="verbose">Exporting function 'Get-ToolsLocation'.</S><S S="verbose">Exporting function 'Get-UACEnabled'.</S><S S="verbose">Exporting function 'Get-UninstallRegistryKey'.</S><S S="verbose">Exporting function 'Get-VirusCheckValid'.</S><S S="verbose">Exporting function 'Get-WebFile'.</S><S S="verbose">Exporting function 'Get-WebFileName'.</S><S S="verbose">Exporting function 'Get-WebHeaders'.</S><S S="verbose">Exporting function 'Install-BinFile'.</S><S S="verbose">Exporting function 'Install-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Install-ChocolateyExplorerMenuItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyFileAssociation'.</S><S S="verbose">Exporting function 'Install-ChocolateyInstallPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyPath'.</S><S S="verbose">Exporting function 'Install-ChocolateyPinnedTaskBarItem'.</S><S S="verbose">Exporting function 'Install-ChocolateyPowershellCommand'.</S><S S="verbose">Exporting function 'Install-ChocolateyShortcut'.</S><S S="verbose">Exporting function 'Install-ChocolateyVsixPackage'.</S><S S="verbose">Exporting function 'Install-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Install-Vsix'.</S><S S="verbose">Exporting function 'Set-EnvironmentVariable'.</S><S S="verbose">Exporting function 'Set-PowerShellExitCode'.</S><S S="verbose">Exporting function 'Start-ChocolateyProcessAsAdmin'.</S><S S="verbose">Exporting function 'Test-ProcessAdminRights'.</S><S S="verbose">Exporting function 'Uninstall-BinFile'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyEnvironmentVariable'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyPackage'.</S><S S="verbose">Exporting function 'Uninstall-ChocolateyZipPackage'.</S><S S="verbose">Exporting function 'Update-SessionEnvironment'.</S><S S="verbose">Exporting function 'Write-FunctionCallLogMessage'.</S><S S="verbose">Exporting function 'Install-ChocolateyDesktopLink'.</S><S S="verbose">Exporting function 'Write-ChocolateyFailure'.</S><S S="verbose">Exporting function 'Write-ChocolateySuccess'.</S><S S="verbose">Exporting function 'Write-FileUpdateLog'.</S><S S="verbose">Exporting function 'Get-AppInstallLocation'.</S><S S="verbose">Exporting function 'Get-AvailableDriveLetter'.</S><S S="verbose">Exporting function 'Get-EffectiveProxy'.</S><S S="verbose">Exporting function 'Get-PackageCacheLocation'.</S><S S="verbose">Exporting function 'Get-WebContent'.</S><S S="verbose">Exporting function 'Register-Application'.</S><S S="verbose">Exporting function 'Remove-Process'.</S><S S="verbose">Exporting function 'Install-WindowsUpdate'.</S><S S="verbose">Exporting function 'Test-WindowsUpdate'.</S><S S="verbose">Exporting alias 'Get-ProcessorBits'.</S><S S="verbose">Exporting alias 'Get-OSBitness'.</S><S S="verbose">Exporting alias 'Get-InstallRegistryKey'.</S><S S="verbose">Exporting alias 'Generate-BinFile'.</S><S S="verbose">Exporting alias 'Add-BinFile'.</S><S S="verbose">Exporting alias 'Start-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Invoke-ChocolateyProcess'.</S><S S="verbose">Exporting alias 'Remove-BinFile'.</S><S S="verbose">Exporting alias 'refreshenv'.</S></Objs>
+0
+Downloading virtualbox 64 bit
+  from 'https://download.virtualbox.org/virtualbox/7.0.6/VirtualBox-7.0.6-155176-Win.exe'
+Progress: 100% - Completed download of C:\Users\User\AppData\Local\Temp\chocolatey\virtualbox\7.0.6\VirtualBox-7.0.6-155176-Win.exe (105.34 MB).
+Download of VirtualBox-7.0.6-155176-Win.exe (105.34 MB) completed.
+Hashes match.
+Installing virtualbox...
+VirtualBox-7.0.6-155176-Win.exe: error: Installation failed! Error: Fatal error during installation.
+Microsoft.PowerShell.Commands.WriteErrorException
+ERROR: Running ["C:\Users\User\AppData\Local\Temp\chocolatey\virtualbox\7.0.6\VirtualBox-7.0.6-155176-Win.exe" -s -l -msiparams REBOOT=ReallySuppress ALLUSERS=1 ] was not successful. Exit code was '1'. See log for possible error messages.
+The install of virtualbox was NOT successful.
+Error while running 'C:\ProgramData\chocolatey\lib\virtualbox\tools\chocolateyInstall.ps1'.
+ See log for details.
+
+Chocolatey installed 8/10 packages. 2 packages failed.
+ See the log for details (C:\ProgramData\chocolatey\logs\chocolatey.log).
+
+Installed:
+ - kb2919355 v1.0.20160915
+ - kb3033929 v1.0.5
+ - chocolatey-core.extension v1.4.0
+ - kb2999226 v1.0.20181019
+ - kb2919442 v1.0.20160915
+ - chocolatey-compatibility.extension v1.0.0
+ - kb3035131 v1.0.3
+ - chocolatey-windowsupdate.extension v1.0.5
+
+Failures
+ - vcredist140 (exited 404) - Error while running 'C:\ProgramData\chocolatey\lib\vcredist140\tools\chocolateyInstall.ps1'.
+ See log for details.
+ - virtualbox (exited 1) - Error while running 'C:\ProgramData\chocolatey\lib\virtualbox\tools\chocolateyInstall.ps1'.
+ See log for details.
+
+C:\WINDOWS\system32>
